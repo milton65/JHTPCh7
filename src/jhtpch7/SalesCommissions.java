@@ -31,18 +31,18 @@ public class SalesCommissions
 //      for (int salesPerson : salesAmount)
 //         ++frequency[salesPerson / 9];
 //         System.out.println(frequency[sale / 9]);
-        
+
 
       System.out.printf("The sales amounts are:%n%n");
       System.out.println("Sales Person" + "  Sales Amount($)" + " Salary Ranges($)"
                          + "  Frequency");
-
+        
  
         
-      // output each Sales Person salary
+            // output each Sales Person salary
       for (int salesPerson = 0; salesPerson < salesAmount.length; salesPerson++)
       {   
-    
+           
          if (salesAmount[salesPerson] >= 200 && salesAmount[salesPerson] < 300)
                  frequency[salesPerson] = frequency[salesPerson] + 1;
          else if ( salesAmount[salesPerson] >=300 && salesAmount[salesPerson]<400) 
@@ -62,18 +62,18 @@ public class SalesCommissions
          else if ( salesAmount[salesPerson] ==1000) 
                  frequency[salesPerson] = frequency[salesPerson] + 1;
       //      ++frequency[salesPerson];
-     
+
             System.out.printf("%6d   %13d     %8d-%3d %13d%n",
             salesPerson + 1, salesAmount[salesPerson],
               200 + salesPerson * 100, 200 + salesPerson * 100 + 99,
               frequency[salesPerson]);
            //         salesAmount[salesPerson] + 0.09 * 5000);
-         
+               
 
 //            if (salesAmount[salesPerson] >= 800 && salesAmount[salesPerson] < 900)
 //            {frequency[salesPerson] = frequency[salesPerson] + 1;//
 //                System.out.printf("%n%2d", frequency[salesPerson]);
-      }
+     }
    }
 }
    
